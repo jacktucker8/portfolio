@@ -1,0 +1,352 @@
+html{
+    scroll-behavior: smooth;
+}
+
+main {
+  font-family: 'Lato', sans-serif; 
+  margin: 0;
+  padding: 0;
+  font-size: 16pt; 
+  background-color: rgb(219, 192, 111);
+  margin: auto;
+  max-width: 90%;
+  height: auto;
+}
+
+p {
+  text-align: center;
+}
+
+header{
+  font-size: 2em;
+  text-align: center;
+  line-height: 2;
+  background-color: rgb(167, 216, 216);
+}
+
+.nav_links{
+  display: flex;
+  flex-direction: column;
+}
+
+li a:hover {
+  background-color: rgb(219, 192, 111);
+}
+nav .current {
+  background-color: rgb(219, 192, 111);
+  text-decoration: underline;
+}
+.skip a{
+  background: white;
+  left: 0;
+  padding: 6px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+  position: absolute;
+  top: -40px;
+}
+.skip a:focus{
+  top: 0px;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr ;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+
+
+.container img {
+  width: 400px;
+  height: auto;
+  margin: auto;
+  }
+  
+.container2 {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  }
+  
+
+.container2 {
+    flex: 25%;
+    max-width: 75%;
+    padding: 0 4px;
+  }
+  
+.container2 img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  }
+.greatneck { 
+  animation : none;
+}
+
+.container3{
+  display: grid;
+  grid-template-columns: 1fr ;
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  padding: 10px;
+  margin: auto;
+  justify-items: center;
+}
+
+.container3 img{
+  width: 400px;
+  height: auto;
+  place-items: center;
+}
+
+
+footer {
+  padding: 50px;
+  color: rgb(8, 85, 187);
+  text-align: center;
+  font-family: Impact, Charcoal, sans-serif; 
+}
+
+.resume{
+    padding: 15px;
+    color: rgb(148, 0, 0);
+    text-align: center;
+    font-family: Impact, Charcoal, sans-serif; 
+}
+
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid rgb(0, 0, 0); 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical; 
+  }
+  
+  input[type=submit] {
+    background-color: #575757;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #000000;
+  }
+
+  .contact{
+    background-attachment: scroll;
+    background-position: center;  
+    background-repeat: no-repeat; 
+    background-size: cover;       
+    color: black;
+    height: 600px;            
+    background-image: url('../images/desk.jpg');
+    background-repeat: no-repeat;
+    margin: auto;
+  }
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #40A6F4;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  li {
+    float: center;
+  }
+  
+  li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+@media screen and (min-width: 776px){
+    
+  nav li{
+    float: left;
+  }
+  
+  nav li a{
+    display: block;
+    color: rgb(116, 0, 0);
+    text-align: center;
+    padding: 2vh 3.5vw;
+    text-decoration: none;
+  }
+
+  .nav_links{
+    display: flex;
+    flex-direction: column; 
+    }
+  .container{
+    grid-template-columns: 1fr ;
+    grid-template-rows: 350px 350px 350px 350px ;
+    width: 95vw;
+    justify-content: space-between;
+    padding: 90px;
+    }
+
+  .container img {
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+  }
+
+  .image-1, .image-2, .image-3, .image-4, .image-5, .image-6, .image-7, .image-8, .image-9{
+    padding-left: 120px;
+  }
+
+
+  .greatneck { 
+    animation : none;
+  }
+  .contact{
+    background-attachment: scroll;
+    background-position: center;  
+    background-repeat: no-repeat; 
+    background-size: cover;       
+    color: black;
+    height: 600px;            
+    background-image: url('../images/desk.jpg');
+    background-repeat: no-repeat;
+    margin: auto;
+  }
+}
+  
+@media screen and (min-width: 1000px){
+  .nav_links{
+    display: flex;
+    flex-direction: row;
+  }
+  nav li a{
+    padding: 3vh 3.5vw;
+  }
+  
+  nav a{
+    font-size: 3vh;
+  }
+
+  .container{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 350px 350px 350px  ;
+    width: 95vw;
+    padding: 90px;
+  }
+
+  .container img {
+    width: 400px;
+    height: auto;
+    border-radius: 50%;
+    }
+    
+  .image-1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+    
+  .image-2{
+    grid-column: 1/2;
+    grid-row: 3/3;
+  }
+    
+  .image-3{
+    grid-column: 1/ span 2; 
+    grid-row: 5/ 5;
+  }
+  
+  .image-4{
+    grid-column: 2/2;
+    grid-row: 1/2;
+    width: 80%;
+    padding-left: 90px;
+  }
+    
+  .image-5{
+    grid-column: 2/3;
+    grid-row: 2/ 2;
+  }
+  
+  .image-6{
+    grid-column: 2/ 3;
+    grid-row: 4/4;
+    padding-left: 80px;
+  }
+  
+  .image-7{
+    grid-column: 3/ 3;
+    grid-row: 2/ 2;
+    padding-left: 90px;
+  }
+    
+  .image-8{
+    grid-column: 3/3 ;
+    grid-row: 3/  3;
+    padding-left: 90px;
+  }
+  
+  .image-9{
+    grid-column: 3/3;
+    grid-row: 4/5;
+    padding-left: 90px;
+  }
+  .container2 {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .greatneck {
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .greatneck {
+    position: relative;
+    animation: myfirst 8s linear 0s infinite alternate;
+    }
+      
+  @keyframes myfirst {
+    0%   {left:0px; top:0px;}
+    100% {left:20px; top:0px;}
+    }
+  .hockeyimage{
+    grid-column: 2/span 2;
+  }
+  .contact{
+    background-attachment: fixed;
+    background-position: center;  
+    background-repeat: no-repeat; 
+    background-size: cover;       
+    color: black;
+    height: 600px;            
+    background-image: url('../images/desk.jpg');
+    background-repeat: no-repeat;
+    margin: auto;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+    .greatneck { 
+      animation : none;
+    }
+    .contact{
+      background-attachment: scroll;
+    }
+  }
